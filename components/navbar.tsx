@@ -3,6 +3,8 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
+  <>
+   <div className="w-full mt-16"></div>
     <div className='w-full h-14 bg-white fixed bottom-0'>
       <div className='flex flex-row h-full justify-around items-center'>
         <Link href='/'>
@@ -73,6 +75,7 @@ const Navbar = () => {
         </Link>
       </div>
     </div>
+   </>
   );
 };
 
