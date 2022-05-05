@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Navbar from "../components/navbar";
 
 const Home: NextPage = () => {
   return (
@@ -94,6 +95,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
+      <Navbar></Navbar>
     </>
   );
 };

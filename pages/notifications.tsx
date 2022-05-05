@@ -1,5 +1,7 @@
 import type { NextPage } from "next";
 import NotifCard from "../components/notification-card";
+import Navbar from "../components/navbar";
+
 const Home: NextPage = () => {
   return (
     <>
@@ -50,6 +52,7 @@ const Home: NextPage = () => {
         </div>
       </div>
       <NotifCard></NotifCard>
+      <Navbar></Navbar>
     </>
   );
 };
