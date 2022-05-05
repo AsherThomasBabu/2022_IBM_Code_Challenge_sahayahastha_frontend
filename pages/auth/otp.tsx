@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css'
 import type { NextPage } from 'next'
 
-const Login = () => {
+const Otp = () => {
     return (
 <div className="min-h-full  mt-56 py-2 px-4 sm:px-4 lg:px-6">
     <div className="max-w-md w-full space-y-3"></div>
@@ -61,11 +61,16 @@ form-label inline-block mb-2 text-gray-700"
             <span className="absolute left-0 inset-y-0 flex items-center pl-3">
               <div className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" aria-hidden="true" />
             </span>
-            Get OTP
+            Login
           </button>
           <a className="link link-accent" href='#'>Wrong Phone No? Go Back</a>
         </div>
         
+
+
+        
+
+
     </div>
     
     
@@ -73,4 +78,5 @@ form-label inline-block mb-2 text-gray-700"
 
 }
 
-export default Login
+
+export default Otp

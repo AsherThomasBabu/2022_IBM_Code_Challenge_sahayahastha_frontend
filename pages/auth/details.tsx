@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 
-const Login = () => {
+const Details = () => {
     return (
     
     
@@ -8,7 +8,7 @@ const Login = () => {
     <div className="max-w-md w-full space-y-3">
       
         
-        <h5 className="mt-4  text-2xl font-extrabold text-gray-900">Enter Your Detaild</h5>
+        <h5 className="mt-4  text-2xl font-extrabold text-gray-900">Enter Your Details</h5>
         <p className="mt-1 text-center text-sm text-gray-600"> 
         </p>
       </div>
@@ -178,4 +178,4 @@ form-label inline-block mb-2 text-gray-700"
     )
 }
 
-export default Login
+export default Details
