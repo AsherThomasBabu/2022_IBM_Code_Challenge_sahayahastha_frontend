@@ -50,8 +50,6 @@ const Home: NextPage = () => {
         </div>
       </div>
       <NotifCard></NotifCard>
-      <NotifCard></NotifCard>
-      <NotifCard></NotifCard>
     </>
   );
 };
