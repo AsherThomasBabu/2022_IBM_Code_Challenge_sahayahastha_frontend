@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import NotifCard from "../components/notification-card";
 import Navbar from "../components/navbar";
 
 const Home: NextPage = () => {
