@@ -1,9 +1,9 @@
-import type { NextPage } from "next";
+import { NextPage } from "next";
 import Navbar from "../components/navbar";
 
-const Home: NextPage = () => {
+const Profile: NextPage = () => {
   return (
-    <>
+    <div>
       <div className='absolute'>
         <svg
           width='149'
@@ -37,56 +37,31 @@ const Home: NextPage = () => {
           </defs>
         </svg>
       </div>
-      <div className='flex-col'>
-        <div className='flex flex-row-reverse online'>
-          <img
-            className=' w-14 border-lime-700 border-2 rounded-full m-3'
-            src='https://www.w3schools.com/howto/img_avatar.png'></img>
-        </div>
-        <div className='flex-row'>
-          <h3 className='text-md font-light m-1 ml-6'>User Profile</h3>
-          <h1 className='text-4xl font-bold ml-6'>Hi, Jon Doe</h1>
-        </div>
-      </div>
-      <div className='flex justify-center'>
-        <div className='flex flex-col p-6 rounded-lg shadow-lg bg-white max-w-sm mt-3 w-full'>
-          <p className='font-normal text-md'>Full Name</p>
-          <p className='font-light text-xs pt-2'>Jon Don Honai </p>
-        </div>
-      </div>
-      <div className='flex justify-center'>
-        <div className='flex flex-col p-6 rounded-lg shadow-lg bg-white max-w-sm mt-3 w-full'>
-          <p className='font-normal text-md'>Mobile Number</p>
-          <p className='font-light text-xs pt-2'>+91 1234567890 </p>
+      <div className='p-5'>
+        <h2 className='text-3xl font-bold mt-10'>Name Kumar</h2>
+        <div className='flex flex-col gap-3 my-10'>
+          <div className='flex flex-col items-start'>
+            <span className='text-xs'>House name</span>
+            <span className='font-semibold'>Krishnaraja Villa</span>
+          </div>
+          <div className='flex flex-col items-start'>
+            <span className='text-xs'>Village/City</span>
+            <span className='font-semibold'>RamaKrishnaPuram</span>
+          </div>
+          <div className='flex flex-col items-start'>
+            <span className='text-xs'>District</span>
+            <span className='font-semibold'>Pathanamthitta</span>
+          </div>
+          <div className='flex flex-col items-start'>
+            <span className='text-xs'>PIN Code</span>
+            <span className='font-semibold'>485983</span>
+          </div>
         </div>
       </div>
-      <div className='flex justify-center'>
-        <div className='flex flex-col p-6 rounded-lg shadow-lg bg-white max-w-sm mt-3 w-full'>
-          <p className='font-normal text-md'>House Name</p>
-          <p className='font-light text-xs pt-2'>Thekkedath Veetil Bhawan</p>
-        </div>
-      </div>
-      <div className='flex justify-center'>
-        <div className='flex flex-col p-6 rounded-lg shadow-lg bg-white max-w-sm mt-3 w-full'>
-          <p className='font-normal text-md'>Village/City</p>
-          <p className='font-light text-xs pt-2'>Chengannur</p>
-        </div>
-      </div>
-      <div className='flex justify-center'>
-        <div className='flex flex-col p-6 rounded-lg shadow-lg bg-white max-w-sm mt-3 w-full'>
-          <p className='font-normal text-md'>District</p>
-          <p className='font-light text-xs pt-2'>Alappuzha</p>
-        </div>
-      </div>{" "}
-      <div className='flex justify-center'>
-        <div className='flex flex-col p-6 rounded-lg shadow-lg bg-white max-w-sm mt-3 w-full'>
-          <p className='font-normal text-md'>PIN Code</p>
-          <p className='font-light text-xs pt-2'>698121</p>
-        </div>
-      </div>
-      <Navbar></Navbar>
-    </>
+      <Navbar />
+    </div>
   );
 };
 
-export default Home;
+export default Profile;
+
