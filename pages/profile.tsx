@@ -1,9 +1,9 @@
-import type { NextPage } from "next";
+import { NextPage } from "next";
 import Navbar from "../components/navbar";
 
-const Home: NextPage = () => {
+const Profile: NextPage = () => {
   return (
-    <>
+    <div>
       <div className='absolute'>
         <svg
           width='149'
@@ -37,64 +37,31 @@ const Home: NextPage = () => {
           </defs>
         </svg>
       </div>
-      <div className='flex-col'>
-        <div className='flex flex-row-reverse online'>
-          <img
-            className=' w-14 border-lime-700 border-2 rounded-full m-3'
-            src='https://www.w3schools.com/howto/img_avatar.png'></img>
-        </div>
-        <div className='flex-row'>
-          <h1 className='text-4xl font-bold m-3'>Hi, Jon Doe</h1>
-        </div>
-      </div>
-      <div className='flex items-center justify-center'>
-        <div className='block p-6 rounded-lg shadow-lg bg-white max-w-sm w-full'>
-          <h5 className='text-gray-900 text-sm leading-tight font-light mb-2'>
-            Initiate New Actions
-          </h5>
-          <div className='block p-6 rounded-lg shadow-lg bg-white max-w-sm mt-3'>
-            <div className='flex justify-center'>
-              <img src='/images/Strike.png'></img>
-            </div>
-            <p className=' text-center font-light mt-3'>
-              Start chat with a Local Officer
-            </p>
+      <div className='p-5'>
+        <h2 className='text-3xl font-bold mt-10'>Name Kumar</h2>
+        <div className='flex flex-col gap-3 my-10'>
+          <div className='flex flex-col items-start'>
+            <span className='text-xs'>House name</span>
+            <span className='font-semibold'>Krishnaraja Villa</span>
           </div>
-          <div className='block p-6 rounded-lg shadow-lg bg-white max-w-sm mt-3'>
-            <div className='flex justify-center'>
-              <img src='/images/Communication.png'></img>
-            </div>
-            <p className=' text-center font-light mt-3'>
-              Start chat with a Local Officer
-            </p>
+          <div className='flex flex-col items-start'>
+            <span className='text-xs'>Village/City</span>
+            <span className='font-semibold'>RamaKrishnaPuram</span>
+          </div>
+          <div className='flex flex-col items-start'>
+            <span className='text-xs'>District</span>
+            <span className='font-semibold'>Pathanamthitta</span>
+          </div>
+          <div className='flex flex-col items-start'>
+            <span className='text-xs'>PIN Code</span>
+            <span className='font-semibold'>485983</span>
           </div>
         </div>
       </div>
-      <div className='flex items-center justify-center mt-5'>
-        <div className='block p-6 rounded-lg shadow-lg bg-white max-w-sm w-full'>
-          <h5 className='text-gray-900 text-sm leading-tight font-light mb-2'>
-            Check Status
-          </h5>
-          <a href=''>
-            <img src='' />
-          </a>
-          <div className='flex flex-row p-6 rounded-lg shadow-lg bg-white max-w-sm mt-3'>
-            <p className='bg-blue-600 px-4 py-1 rounded-2xl mr-3 text-white font-bold'>
-              2
-            </p>
-            <p className='font-light px-4 py-1'>Issues Resolved</p>
-          </div>
-          <div className='flex flex-row p-6 rounded-lg shadow-lg bg-white max-w-sm mt-3'>
-            <p className='bg-blue-600 px-4 py-1 rounded-2xl mr-3 text-white font-bold'>
-              5
-            </p>
-            <p className='font-light px-4 py-1'>Issues Submitted</p>
-          </div>
-        </div>
-      </div>
-      <Navbar></Navbar>
-    </>
+      <Navbar />
+    </div>
   );
 };
 
-export default Home;
+export default Profile;
+
