@@ -90,7 +90,7 @@ useEffect(() =>{
           </button>
 
           <div className='mt-3'>
-          <a className="no-underline  text-blue-600 " href='#'>Wrong Phone No? Go Back
+          <a className="no-underline  text-blue-600 " href='#'> Wrong Phone No? Go Back
 </a>
 </div>
        
