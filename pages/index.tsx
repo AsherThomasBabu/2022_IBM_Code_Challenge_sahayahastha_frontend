@@ -60,14 +60,18 @@ const Home: NextPage = () => {
         </div>
       </div>
 
-      <div className='flex flex-col space-y-4 px-4'>
-        <Link href='/login'>
-          <a>
-            <Button>English</Button>
-          </a>
-        </Link>
+      <div className='flex flex-col space-y-4 ...'>
+        <div className='flex items-center justify-center'>
+          <button className='bg-transparent  hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-5 px-44 -top-72 pt-2 border border-blue-600 hover:border-transparent rounded '>
+            English
+          </button>
+        </div>
 
-        <Button>മലയാളം</Button>
+        <div className='flex items-center justify-center'>
+          <button className='bg-transparent  hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-5 px-40 -top-72 pt-2 border border-blue-600 hover:border-transparent rounded '>
+            Malayalam
+          </button>
+        </div>
       </div>
     </div>
   );
