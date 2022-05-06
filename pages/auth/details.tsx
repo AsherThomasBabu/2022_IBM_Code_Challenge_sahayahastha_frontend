@@ -2,12 +2,9 @@ import styles from '../styles/Home.module.css'
 
 const Details = () => {
     return (
-    
-    
     <div className="min-h-full  mt-28 py-2 px-4 sm:px-4 lg:px-6">
     <div className="max-w-md w-full space-y-3">
       
-        
         <h5 className="mt-4  text-2xl font-extrabold text-gray-900">Enter Your Details</h5>
         <p className="mt-1 text-center text-sm text-gray-600"> 
         </p>
@@ -15,9 +12,7 @@ const Details = () => {
         
       <div className="mb-3 w-full">
     <label htmlFor="exampleTel0" className=" font-medium
-form-label inline-block mb-2 text-gray-700"
-      >Name</label
-    >
+form-label inline-block mb-2 text-gray-700">Name</label>
     <input
       type="text"
       className="
@@ -42,9 +37,7 @@ form-label inline-block mb-2 text-gray-700"
         </div>
         <div className="mb-3 w-full">
     <label htmlFor="exampleTel0" className=" font-medium
-form-label inline-block mb-2 text-gray-700"
-      >House Name</label
-    >
+form-label inline-block mb-2 text-gray-700">House Name</label>
     <input
       type="text"
       className="
@@ -70,9 +63,7 @@ form-label inline-block mb-2 text-gray-700"
 
         <div className="mb-3 w-full">
     <label htmlFor="exampleTel0" className=" font-medium
-form-label inline-block mb-2 text-gray-700"
-      >Village/City</label
-    >
+form-label inline-block mb-2 text-gray-700">Village/City</label>
     <input
       type="text"
       className="
@@ -95,13 +86,9 @@ form-label inline-block mb-2 text-gray-700"
       placeholder=""
     />
         </div>
-
-
         <div className="mb-3 w-full">
     <label htmlFor="exampleTel0" className=" font-medium
-form-label inline-block mb-2 text-gray-700"
-      >Disctrict</label
-    >
+form-label inline-block mb-2 text-gray-700">Disctrict</label>
     <input
       type="text"
       className="
@@ -122,15 +109,10 @@ form-label inline-block mb-2 text-gray-700"
       "
       id="exampleTel0"
       placeholder=""
-    />
-        </div>
-
-
-        <div className="mb-3 w-full">
-    <label htmlFor="exampleTel0" className=" font-medium
-form-label inline-block mb-2 text-gray-700"
-      >Pin Code</label
-    >
+    /> 
+    </div>
+    <div className="mb-3 w-full">
+    <label htmlFor="exampleTel0" className=" font-medium form-label inline-block mb-2 text-gray-700">Pin Code</label>
     <input
       type="number"
       className="
@@ -153,7 +135,6 @@ form-label inline-block mb-2 text-gray-700"
       placeholder=""
     />
         </div>
-
         <div>
           <button
             type="submit"
@@ -165,16 +146,7 @@ form-label inline-block mb-2 text-gray-700"
             Submit
           </button>
         </div>
-
-
-
-
-
       </div>
-    
-    
-    
-    
     )
 }
 

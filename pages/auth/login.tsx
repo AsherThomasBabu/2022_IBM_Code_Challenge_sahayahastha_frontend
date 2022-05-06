@@ -2,28 +2,19 @@ import styles from '../styles/Home.module.css'
 import type { NextPage } from 'next'
 const Login = () => {
     return (
-
-    
-    
     <div className="min-h-full  mt-44 py-2 px-4 sm:px-4 lg:px-6">
     <div className="max-w-md w-full space-y-3">
       <div>
-        
         <h5 className="mt-4  text-2xl font-extrabold text-gray-900">Login/Signup</h5>
         <p className="mt-1 text-center text-sm text-gray-600">
-          
-          
         </p>
       </div>
-      
        <div>
        <div>
        <div className="flex justify-center">
   <div className="mb-3 w-full">
     <label htmlFor="exampleTel0" className=" font-medium
-form-label inline-block mb-2 text-gray-700"
-      >Phone</label
-    >
+form-label inline-block mb-2 text-gray-700">Phone</label>
     <input
       type="number"
       className="
@@ -63,8 +54,6 @@ form-label inline-block mb-2 text-gray-700"
       
     </div>
   </div>
-  
-    
     )
 }
 
