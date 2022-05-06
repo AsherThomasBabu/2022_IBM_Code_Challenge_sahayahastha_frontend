@@ -37,8 +37,8 @@ const Profile: NextPage = () => {
           </defs>
         </svg>
       </div>
-      <div className='p-5'>
-        <h2 className='text-3xl font-bold mt-10'>Name Kumar</h2>
+      <div className='p-5 space-y-6'>
+        <h2 className='text-3xl font-bold mt-10'>Raj Kumar</h2>
         <div className='flex flex-col gap-3 my-10'>
           <div className='flex flex-col items-start'>
             <span className='text-xs'>House name</span>

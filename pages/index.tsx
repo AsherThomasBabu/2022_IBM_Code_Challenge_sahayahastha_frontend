@@ -62,9 +62,11 @@ const Home: NextPage = () => {
 
       <div className='flex flex-col space-y-4 ...'>
         <div className='flex items-center justify-center'>
-          <button className='bg-transparent  hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-5 px-44 -top-72 pt-2 border border-blue-600 hover:border-transparent rounded '>
-            English
-          </button>
+          <Link href="/login">
+            <button className='bg-transparent  hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-5 px-44 -top-72 pt-2 border border-blue-600 hover:border-transparent rounded '>
+              English
+            </button>
+          </Link>
         </div>
 
         <div className='flex items-center justify-center'>

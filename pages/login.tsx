@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import type { NextPage } from "next";
-
 import axios from "axios";
+import Link from "next/link";
 
 const Login:NextPage = () => {
   const [phone,setPhone] = useState<string>('');
@@ -81,11 +81,13 @@ form-label inline-block mb-2 text-gray-700'>
          </div> 
         )}
         <div>
+            <Link href="/auth/otp">
             <button onClick={page==0?sendOTP:verifyOTP}
              disabled={loading}
              className='bg-white rounded-lg border-2 font-bold border-blue-500 text-blue-500 disabled:opacity-40 hover:text-white hover:bg-blue-500 p-3 w-full'>
              {page==0?'Get OTP': 'Verify OTP'} 
             </button>
+            </Link>
         </div>
       </div>
     </div>

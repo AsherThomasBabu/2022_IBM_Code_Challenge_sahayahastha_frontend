@@ -3,6 +3,7 @@ import NotifCard from "../../components/notification-card";
 import Navbar from "../../components/navbar";
 import Chat from "../../components/chat";
 import Link from "next/link";
+import { useRouter } from 'next/router';
 
 const Home: NextPage = () => {
   return (
@@ -50,17 +51,14 @@ const Home: NextPage = () => {
           <h1 className='text-4xl font-bold m-4'>Chat</h1>
         </div>
       </div>
-      <Link href="/chats/window" ><a><Chat /></a></Link>
-      <Link href="/chats/window" ><a><Chat /></a></Link>
-      <Link href="/chats/window" ><a><Chat /></a></Link>
-      <Link href="/chats/window" ><a><Chat /></a></Link>
-      <Link href="/chats/window" ><a><Chat /></a></Link>
-      <Link href="/chats/window" ><a><Chat /></a></Link>
-      <Link href="/chats/window" ><a><Chat /></a></Link>
-      <Link href="/chats/window" ><a><Chat /></a></Link>
-      <Link href="/chats/window" ><a><Chat /></a></Link>
-      <Link href="/chats/window" ><a><Chat /></a></Link>
-      <Navbar></Navbar>
+      <div className="bg-gray-300 h-screen" >
+        <Link href="/chats/window" ><a><Chat /></a></Link>
+        <Link href="/chats/window" ><a><Chat /></a></Link>
+        <Link href="/chats/window" ><a><Chat /></a></Link>
+        <Link href="/chats/window" ><a><Chat /></a></Link>
+        <Link href="/chats/window" ><a><Chat /></a></Link>
+      </div>
+      <Navbar/>
     </>
   );
 };
