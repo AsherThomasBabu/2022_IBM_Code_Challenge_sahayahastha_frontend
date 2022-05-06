@@ -44,52 +44,44 @@ const Home: NextPage = () => {
             src='https://www.w3schools.com/howto/img_avatar.png'></img>
         </div>
         <div className='flex-row'>
-          <h1 className='text-4xl font-bold m-3'>Hi, Jon Doe</h1>
+          <h3 className='text-md font-light m-1 ml-6'>User Profile</h3>
+          <h1 className='text-4xl font-bold ml-6'>Hi, Jon Doe</h1>
         </div>
       </div>
-      <div className='flex items-center justify-center'>
-        <div className='block p-6 rounded-lg shadow-lg bg-white max-w-sm w-full'>
-          <h5 className='text-gray-900 text-sm leading-tight font-light mb-2'>
-            Initiate New Actions
-          </h5>
-          <div className='block p-6 rounded-lg shadow-lg bg-white max-w-sm mt-3'>
-            <div className='flex justify-center'>
-              <img src='/images/Strike.png'></img>
-            </div>
-            <p className=' text-center font-light mt-3'>
-              Start chat with a Local Officer
-            </p>
-          </div>
-          <div className='block p-6 rounded-lg shadow-lg bg-white max-w-sm mt-3'>
-            <div className='flex justify-center'>
-              <img src='/images/Communication.png'></img>
-            </div>
-            <p className=' text-center font-light mt-3'>
-              Start chat with a Local Officer
-            </p>
-          </div>
+      <div className='flex justify-center'>
+        <div className='flex flex-col p-6 rounded-lg shadow-lg bg-white max-w-sm mt-3 w-full'>
+          <p className='font-normal text-md'>Full Name</p>
+          <p className='font-light text-xs pt-2'>Jon Don Honai </p>
         </div>
       </div>
-      <div className='flex items-center justify-center mt-5'>
-        <div className='block p-6 rounded-lg shadow-lg bg-white max-w-sm w-full'>
-          <h5 className='text-gray-900 text-sm leading-tight font-light mb-2'>
-            Check Status
-          </h5>
-          <a href=''>
-            <img src='' />
-          </a>
-          <div className='flex flex-row p-6 rounded-lg shadow-lg bg-white max-w-sm mt-3'>
-            <p className='bg-blue-600 px-4 py-1 rounded-2xl mr-3 text-white font-bold'>
-              2
-            </p>
-            <p className='font-light px-4 py-1'>Issues Resolved</p>
-          </div>
-          <div className='flex flex-row p-6 rounded-lg shadow-lg bg-white max-w-sm mt-3'>
-            <p className='bg-blue-600 px-4 py-1 rounded-2xl mr-3 text-white font-bold'>
-              5
-            </p>
-            <p className='font-light px-4 py-1'>Issues Submitted</p>
-          </div>
+      <div className='flex justify-center'>
+        <div className='flex flex-col p-6 rounded-lg shadow-lg bg-white max-w-sm mt-3 w-full'>
+          <p className='font-normal text-md'>Mobile Number</p>
+          <p className='font-light text-xs pt-2'>+91 1234567890 </p>
+        </div>
+      </div>
+      <div className='flex justify-center'>
+        <div className='flex flex-col p-6 rounded-lg shadow-lg bg-white max-w-sm mt-3 w-full'>
+          <p className='font-normal text-md'>House Name</p>
+          <p className='font-light text-xs pt-2'>Thekkedath Veetil Bhawan</p>
+        </div>
+      </div>
+      <div className='flex justify-center'>
+        <div className='flex flex-col p-6 rounded-lg shadow-lg bg-white max-w-sm mt-3 w-full'>
+          <p className='font-normal text-md'>Village/City</p>
+          <p className='font-light text-xs pt-2'>Chengannur</p>
+        </div>
+      </div>
+      <div className='flex justify-center'>
+        <div className='flex flex-col p-6 rounded-lg shadow-lg bg-white max-w-sm mt-3 w-full'>
+          <p className='font-normal text-md'>District</p>
+          <p className='font-light text-xs pt-2'>Alappuzha</p>
+        </div>
+      </div>{" "}
+      <div className='flex justify-center'>
+        <div className='flex flex-col p-6 rounded-lg shadow-lg bg-white max-w-sm mt-3 w-full'>
+          <p className='font-normal text-md'>PIN Code</p>
+          <p className='font-light text-xs pt-2'>698121</p>
         </div>
       </div>
       <Navbar></Navbar>
