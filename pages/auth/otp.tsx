@@ -1,10 +1,34 @@
 import styles from '../styles/Home.module.css'
 import type { NextPage } from 'next'
+import { useEffect, useState } from 'react'
+import { setInterval } from 'timers';
 
 const Otp = () => {
+
+const [seconds,setSeconds]=useState(59);
+const [minutes,setaMinutes]=useState(0);
+
+
+
+useEffect(() =>{
+  
+  setInterval(() =>{
+    setSeconds(seconds-1)
+    
+
+  },1000)
+
+}
+
+,[seconds]);
+
+
+
+
     return (
+
 <div className="min-h-full  mt-56 py-2 px-4 sm:px-4 lg:px-6">
-    <div className="max-w-md w-full space-y-3"></div>
+    <div className="max-w-md w-full space-y-3">
 
 
     <div>
@@ -16,10 +40,7 @@ const Otp = () => {
         </p>
       </div>
 
-      <label htmlFor="exampleTel0" className=" font-medium
-form-label inline-block mb-2 text-gray-700"
-      >OTP</label
-    >
+     
 
 
     <div>  <input
@@ -43,10 +64,14 @@ form-label inline-block mb-2 text-gray-700"
     "
     id="exampleTel0"
     
-    placeholder="00.59"
+    placeholder="Enter OTP"
+    
+
   />
-
-
+    <div className='mt-2'>
+    <span>OTP Expires In</span>
+     <span> {minutes+"0"}:{seconds}</span>
+     </div>
 </div>
 <div className="mt-3">
 
@@ -56,18 +81,38 @@ form-label inline-block mb-2 text-gray-700"
   <div>
           <button
             type="submit"
-            className="group relative w-full flex justify-center py-3 px-28 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            className="group relative w-full flex justify-center py-3 px-28 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
           >
             <span className="absolute left-0 inset-y-0 flex items-center pl-3">
-              <div className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" aria-hidden="true" />
+              <div className="h-5 w-5 text-blue-500 group-hover:text-blue-400" aria-hidden="true" />
             </span>
             Login
           </button>
-          <a className="link link-accent" href='#'>Wrong Phone No? Go Back</a>
+
+          <div className='mt-3'>
+          <a className="no-underline  text-blue-600 " href='#'>Wrong Phone No? Go Back
+</a>
+</div>
+       
         </div>
         
+        <div className='timer'>
+          <div className='container'>
+            <div className='timer_container'>
+            
 
 
+            </div>
+
+
+
+          </div>
+
+
+
+        </div>
+
+        </div>
         
 
 
