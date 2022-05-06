@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
-import NotifCard from "../components/notification-card";
-import Navbar from "../components/navbar";
+import NotifCard from "../../components/notification-card";
+import Navbar from "../../components/navbar";
+import Chat from "../../components/chat";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -45,17 +47,19 @@ const Home: NextPage = () => {
             src='https://www.w3schools.com/howto/img_avatar.png' alt="avatar"></img>
         </div>
         <div className='flex-row'>
-          <h1 className='text-4xl font-bold m-3'>Notifications</h1>
+          <h1 className='text-4xl font-bold m-4'>Chat</h1>
         </div>
       </div>
-      <NotifCard></NotifCard>
-      <NotifCard></NotifCard>
-      <NotifCard></NotifCard>
-      <NotifCard></NotifCard>
-      <NotifCard></NotifCard>
-      <NotifCard></NotifCard>
-      <NotifCard></NotifCard>
-      <NotifCard></NotifCard>
+      <Link href="/chats/window" ><a><Chat /></a></Link>
+      <Link href="/chats/window" ><a><Chat /></a></Link>
+      <Link href="/chats/window" ><a><Chat /></a></Link>
+      <Link href="/chats/window" ><a><Chat /></a></Link>
+      <Link href="/chats/window" ><a><Chat /></a></Link>
+      <Link href="/chats/window" ><a><Chat /></a></Link>
+      <Link href="/chats/window" ><a><Chat /></a></Link>
+      <Link href="/chats/window" ><a><Chat /></a></Link>
+      <Link href="/chats/window" ><a><Chat /></a></Link>
+      <Link href="/chats/window" ><a><Chat /></a></Link>
       <Navbar></Navbar>
     </>
   );

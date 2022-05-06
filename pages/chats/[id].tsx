@@ -27,7 +27,7 @@ const Chat: NextPage = () => {
             <div className='flex flex-col items-start w-full'>
               <div className='text-xs'>User</div>
               <div className='rounded-md rounded-tl-none p-2 bg-blue-200'>
-                Hwhllo
+                Hello
               </div>
               <span className='text-xs text-gray-500'>10:32pm</span>
             </div>

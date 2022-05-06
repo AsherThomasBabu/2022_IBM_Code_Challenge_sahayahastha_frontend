@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Chat = () => {
   return (
-    <div className='flex justify-center'>
+    <div className='flex justify-center pt-3 shadow-sm rounded-lg'>
       <div className='flex flex-row justify-around w-full pb-2 pt-2 items-center'>
         <Image
           src='/images/23.jpg'
